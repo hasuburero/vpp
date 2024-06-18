@@ -143,4 +143,24 @@ content-type = application/json
 }
 ```
 
-##
+## POST /job/$job_id
+
+```
+request body
+content-type = application/json
+{
+    "state": "finished",
+    "output": "78204124132"
+
+    # extra scheme for next job like pipelines
+    "input": "78204124132"
+}
+
+response body
+content-type = application/json
+{
+    "code": 0,
+    "status": "ok",
+    "message": "Job found"
+}
+```
